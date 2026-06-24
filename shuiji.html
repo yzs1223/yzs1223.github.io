@@ -1,0 +1,6 @@
+import random
+num = random.randint(1, 100)
+print("随机数字是：", num)
+chars = "abcdefghijklmn123456789"
+password = "".join(random.choice(chars) for i in range(6))
+print("随机密码：", password)
