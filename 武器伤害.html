@@ -1,0 +1,10 @@
+weapon_list = [
+    ("M416", 41),
+    ("AWM", 99),
+    ("UZI", 23)
+]
+# 按伤害从低到高排序
+weapon_list.sort(key=lambda x: x[1])
+print("武器伤害排序：")
+for name, dmg in weapon_list:
+    print(f"{name} 伤害：{dmg}")
