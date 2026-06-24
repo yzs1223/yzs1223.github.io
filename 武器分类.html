@@ -1,0 +1,10 @@
+weapons = [
+    {"name":"AK47","type":"步枪"},
+    {"name":"沙鹰","type":"手枪"},
+    {"name":"AWM","type":"狙击枪"}
+]
+
+search_type = input("输入要查找的武器类型：")
+for w in weapons:
+    if w["type"] == search_type:
+        print("匹配武器：", w["name"])
