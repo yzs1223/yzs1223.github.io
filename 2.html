@@ -1,0 +1,10 @@
+import random
+
+weapon_names = ["突击步枪", "狙击枪", "手枪", "匕首", "霰弹枪"]
+rarity = ["普通", "精良", "稀有", "史诗", "传说"]
+
+name = random.choice(weapon_names)
+rank = random.choice(rarity)
+atk = random.randint(10, 99)
+
+print(f"获得武器：{rank}{name}，攻击力：{atk}")
